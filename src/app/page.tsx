@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import Link from 'next/link'
 import { 
   Clock, 
   TrendingUp, 
@@ -43,10 +44,10 @@ export default function Home() {
             Axomations builds smart, tailor-made automations that save time, reduce error, and grow your business.
           </p>
           <div className="flex justify-center">
-            <button className="btn-secondary text-lg flex items-center justify-center">
+            <Link href="/contact" className="btn-secondary text-lg flex items-center justify-center">
               Book free audit call
               <ArrowRight className="ml-2 w-5 h-5" />
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -286,10 +287,10 @@ export default function Home() {
             can save you time and grow your revenue.
           </p>
           <div className="space-y-4 flex flex-col items-center">
-            <button className="btn-secondary text-lg flex items-center justify-center">
+            <Link href="/contact" className="btn-secondary text-lg flex items-center justify-center">
               Book free audit call
               <ArrowRight className="ml-2 w-5 h-5" />
-            </button>
+            </Link>
             <p className="text-sm text-gray-300">
               No commitment • 30-minute audit call • Custom automation plan included
             </p>
