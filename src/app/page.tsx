@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { 
   Clock, 
   TrendingUp, 
@@ -24,10 +25,19 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
-              <div className="w-10 h-10 bg-navy rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">A</span>
-              </div>
-              <span className="ml-3 text-2xl font-bold text-navy">Axomations</span>
+              <Image 
+                src="/logo.png" 
+                alt="Axomations Logo" 
+                width={180} 
+                height={40}
+                className="h-auto"
+              />
+            </div>
+            <div className="flex items-center">
+              <Link href="/contact" className="btn-secondary flex items-center justify-center">
+                Book free audit call
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Link>
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowLeft, Mail, Phone, MapPin, Send } from 'lucide-react';
 
 export default function ContactPage() {
@@ -83,15 +84,23 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-navy via-navy to-gray-800">
       {/* Header */}
-      <header className="relative z-10 px-6 py-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <Link href="/" className="text-2xl font-bold text-white">
-            Axomations
-          </Link>
-          <Link href="/" className="text-off-white hover:text-sky-blue transition-colors flex items-center gap-2">
-            <ArrowLeft className="w-4 h-4" />
-            Back to Home
-          </Link>
+      <header className="bg-white shadow-sm border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center py-4">
+            <Link href="/" className="flex items-center">
+              <Image 
+                src="/logo.png" 
+                alt="Axomations Logo" 
+                width={180} 
+                height={45}
+                className="h-auto"
+              />
+            </Link>
+            <Link href="/" className="text-navy hover:text-sky-blue transition-colors flex items-center gap-2">
+              <ArrowLeft className="w-4 h-4" />
+              Back to Home
+            </Link>
+          </div>
         </div>
       </header>
 
