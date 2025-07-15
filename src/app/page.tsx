@@ -34,9 +34,10 @@ export default function Home() {
               />
             </div>
             <div className="flex items-center">
-              <Link href="/contact" className="btn-secondary flex items-center justify-center">
-                Book free audit call
-                <ArrowRight className="ml-2 w-4 h-4" />
+              <Link href="/contact" className="btn-secondary text-sm md:text-base px-3 py-2 md:px-4 md:py-3 flex items-center justify-center">
+                <span className="hidden sm:inline">Book free audit call</span>
+                <span className="sm:hidden">Book call</span>
+                <ArrowRight className="ml-1 md:ml-2 w-3 h-3 md:w-4 md:h-4" />
               </Link>
             </div>
           </div>
