@@ -313,13 +313,16 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-4 md:mb-0">
-              <div className="w-8 h-8 bg-navy rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">A</span>
-              </div>
-              <span className="ml-2 text-xl font-bold text-navy">Axomations</span>
+              <Image 
+                src="/logo.png" 
+                alt="Axomations Logo" 
+                width={120} 
+                height={30}
+                className="h-auto"
+              />
             </div>
             <div className="text-cool-gray text-sm">
-              © 2024 Axomations. All rights reserved.
+              © 2025 Axomations. All rights reserved.
             </div>
           </div>
         </div>
