@@ -82,7 +82,7 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-navy via-navy to-gray-800">
+    <div className="min-h-screen bg-gradient-to-br from-primary via-secondary to-primary">
       {/* Header */}
       <header className="bg-white shadow-sm border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -96,7 +96,7 @@ export default function ContactPage() {
                 className="h-auto"
               />
             </Link>
-            <Link href="/" className="text-navy hover:text-sky-blue transition-colors flex items-center gap-2">
+            <Link href="/" className="text-primary hover:text-secondary transition-colors flex items-center gap-2">
               <ArrowLeft className="w-4 h-4" />
               Back to Home
             </Link>

@@ -45,13 +45,13 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="section-padding bg-gradient-to-br from-navy to-navy/90 text-white">
+      <section className="section-padding bg-gradient-to-br from-primary to-secondary text-white">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             Automate Your Business.<br />
-            <span className="text-sky-blue">Reclaim Your Time.</span>
+            <span className="text-accent">Reclaim Your Time.</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl mb-8 text-muted max-w-4xl mx-auto leading-relaxed">
             Axomations builds smart, tailor-made automations that save time, reduce error, and grow your business.
           </p>
           <div className="flex justify-center">
@@ -288,12 +288,12 @@ export default function Home() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="section-padding bg-gradient-to-r from-navy to-navy/90 text-white">
+      <section className="section-padding bg-gradient-to-r from-primary to-secondary text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Ready to Transform Your Business?
           </h2>
-          <p className="text-xl mb-8 text-gray-200">
+          <p className="text-xl mb-8 text-muted">
             Book a free 30-minute audit call and discover exactly how automation 
             can save you time and grow your revenue.
           </p>
@@ -302,7 +302,7 @@ export default function Home() {
               Book free audit call
               <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
-            <p className="text-sm text-gray-300">
+            <p className="text-sm text-accent">
               No commitment • 30-minute audit call • Custom automation plan included
             </p>
           </div>

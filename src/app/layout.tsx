@@ -8,10 +8,11 @@ export const metadata: Metadata = {
   keywords: 'automation, business automation, workflow automation, process automation',
   icons: {
     icon: [
+      { url: '/favicon.png', sizes: '32x32', type: 'image/png' },
       { url: '/small-logo.png', sizes: '32x32', type: 'image/png' },
       { url: '/small-logo.png', sizes: '16x16', type: 'image/png' },
     ],
-    shortcut: '/small-logo.png',
+    shortcut: '/favicon.png',
     apple: '/small-logo.png',
   },
   openGraph: {
@@ -28,6 +29,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/small-logo.png" />
+        <link rel="shortcut icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/small-logo.png" />
+      </head>
       <body className="font-montserrat bg-off-white">{children}</body>
     </html>
   )
