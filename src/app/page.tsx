@@ -28,7 +28,7 @@ export default function Home() {
               <Image 
                 src="/logo.png" 
                 alt="Axomations Logo" 
-                width={180} 
+                width={240} 
                 height={40}
                 className="h-auto"
               />

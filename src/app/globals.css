@@ -20,6 +20,8 @@
   --color-medium-blue: #427D9D;
   --color-light-blue: #9BBEC8;
   --color-pale-blue: #DDF2FD;
+
+  user-select: none;
 }
 
 html {
