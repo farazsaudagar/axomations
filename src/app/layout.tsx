@@ -35,7 +35,7 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/small-logo.png" />
       </head>
-      <body className="font-montserrat bg-off-white">{children}</body>
+      <body className="font-montserrat bg-muted">{children}</body>
     </html>
   )
 } 

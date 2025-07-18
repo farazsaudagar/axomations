@@ -9,17 +9,6 @@
   --color-secondary: #427D9D;    /* Medium blue */
   --color-accent: #9BBEC8;       /* Light blue */
   --color-muted: #DDF2FD;        /* Pale blue */
-  
-  /* Legacy colors for backward compatibility */
-  --color-navy: #1D3557;
-  --color-cool-gray: #A8A9AD;
-  --color-sky-blue: #4DD0E1;
-  --color-soft-green: #81C784;
-  --color-off-white: #F5F5F5;
-  --color-dark-blue: #164863;
-  --color-medium-blue: #427D9D;
-  --color-light-blue: #9BBEC8;
-  --color-pale-blue: #DDF2FD;
   user-select: none;
 }
 
@@ -29,18 +18,139 @@ html {
 
 @layer components {
   .btn-primary {
-    @apply bg-primary text-white font-semibold py-3 px-8 rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    transform: scale(1);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--color-primary);
+    opacity: 0.9;
+    transform: scale(1.05);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   }
   
   .btn-secondary {
-    @apply bg-secondary text-white font-semibold py-3 px-8 rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+    background-color: var(--color-secondary);
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    transform: scale(1);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--color-secondary);
+    opacity: 0.9;
+    transform: scale(1.05);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   }
 
   .card {
-    @apply bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-2;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    transform: translateY(-0.5rem);
   }
 
   .section-padding {
-    @apply py-16 px-4 sm:px-6 lg:px-8;
+    padding: 4rem 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .section-padding {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .section-padding {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  
+  /* Text color utilities using CSS variables */
+  .text-primary {
+    color: var(--color-primary);
+  }
+  
+  .text-secondary {
+    color: var(--color-secondary);
+  }
+  
+  .text-accent {
+    color: var(--color-accent);
+  }
+  
+  .text-muted {
+    color: var(--color-muted);
+  }
+  
+  /* Background color utilities using CSS variables */
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  
+  .bg-secondary {
+    background-color: var(--color-secondary);
+  }
+  
+  .bg-accent {
+    background-color: var(--color-accent);
+  }
+  
+  .bg-muted {
+    background-color: var(--color-muted);
+  }
+  
+  /* Background with opacity utilities */
+  .bg-primary\/10 {
+    background-color: color-mix(in srgb, var(--color-primary) 10%, transparent);
+  }
+  
+  .bg-secondary\/10 {
+    background-color: color-mix(in srgb, var(--color-secondary) 10%, transparent);
+  }
+  
+  .bg-accent\/10 {
+    background-color: color-mix(in srgb, var(--color-accent) 10%, transparent);
+  }
+  
+  .bg-accent\/20 {
+    background-color: color-mix(in srgb, var(--color-accent) 20%, transparent);
+  }
+  
+  .bg-primary\/20 {
+    background-color: color-mix(in srgb, var(--color-primary) 20%, transparent);
+  }
+  
+  .bg-secondary\/20 {
+    background-color: color-mix(in srgb, var(--color-secondary) 20%, transparent);
+  }
+  
+  /* Border color utilities */
+  .border-muted\/30 {
+    border-color: color-mix(in srgb, var(--color-muted) 30%, transparent);
+  }
+  
+  /* Focus ring utilities */
+  .focus\:ring-accent:focus {
+    --tw-ring-color: var(--color-accent);
+    box-shadow: 0 0 0 3px var(--color-accent);
   }
 } 
