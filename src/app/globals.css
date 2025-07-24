@@ -4,44 +4,44 @@
 @tailwind utilities;
 
 :root {
-  /* Semantic Color Palette */
-  --color-primary: #164863;      /* Dark blue */
-  --color-secondary: #427D9D;    /* Medium blue */
-  --color-accent: #9BBEC8;       /* Light blue */
-  --color-muted: #DDF2FD;        /* Pale blue */
-  
-  /* Legacy colors for backward compatibility */
-  --color-navy: #1D3557;
-  --color-cool-gray: #A8A9AD;
-  --color-sky-blue: #4DD0E1;
-  --color-soft-green: #81C784;
-  --color-off-white: #F5F5F5;
-  --color-dark-blue: #164863;
-  --color-medium-blue: #427D9D;
-  --color-light-blue: #9BBEC8;
-  --color-pale-blue: #DDF2FD;
+    /* Semantic Color Palette */
+    --color-primary: #164863; /* Dark blue */
+    --color-secondary: #427d9d; /* Medium blue */
+    --color-accent: #9bbec8; /* Light blue */
+    --color-muted: #ddf2fd; /* Pale blue */
 
-  user-select: none;
+    /* Legacy colors for backward compatibility */
+    --color-navy: #1d3557;
+    --color-cool-gray: #a8a9ad;
+    --color-sky-blue: #4dd0e1;
+    --color-soft-green: #81c784;
+    --color-off-white: #f5f5f5;
+    --color-dark-blue: #164863;
+    --color-medium-blue: #427d9d;
+    --color-light-blue: #9bbec8;
+    --color-pale-blue: #ddf2fd;
+
+    user-select: none;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 @layer components {
-  .btn-primary {
-    @apply bg-primary text-white font-semibold py-3 px-8 rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
-  }
-  
-  .btn-secondary {
-    @apply bg-secondary text-white font-semibold py-3 px-8 rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
-  }
+    .btn-primary {
+        @apply bg-primary text-white font-semibold py-3 px-8 rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+    }
 
-  .card {
-    @apply bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-2;
-  }
+    .btn-secondary {
+        @apply bg-secondary text-white font-semibold py-3 px-8 rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+    }
 
-  .section-padding {
-    @apply py-16 px-4 sm:px-6 lg:px-8;
-  }
-} 
+    .card {
+        @apply bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-2;
+    }
+
+    .section-padding {
+        @apply py-16 px-4 sm:px-6 lg:px-8;
+    }
+}
