@@ -11,6 +11,8 @@ module.exports = {
                 secondary: '#427d9d',
                 accent: '#9bbec8',
                 muted: '#ddf2fd',
+                'soft-green': '#81c784',
+                'sky-blue': '#4dd0e1',
             },
             fontFamily: {
                 montserrat: ['Montserrat', 'sans-serif'],
